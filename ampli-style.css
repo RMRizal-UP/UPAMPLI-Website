@@ -1,0 +1,133 @@
+h1{
+    text-align: center;
+    font-size: 400%;
+    display: block;
+    color: black;
+  }
+header{
+    background-color: #D9D9D9;
+    position:static;
+    align-items: center;
+    margin: auto;
+  }
+a, a:link{
+    color: black;
+    text-decoration: none;
+    height: 75px;
+    margin-top: auto;
+  }
+a:visited, a:active{
+    color: black;
+  }
+a:hover{
+    color:black;
+    text-decoration: underline;
+  }
+nav{
+    height: 100%;
+    width: 100%;
+    font-size: 2.25em;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    gap: 2.5%;
+  }
+div{
+    align-items: center;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-left: auto;
+  }
+body{
+    margin:20px;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family:Petaluma Script;
+    color:black;
+    margin:0px;
+  } 
+  p{
+    font-size: 48px;
+    line-height: 140%;
+    text-align: justify;
+    width: 75%;
+  }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+img#cover{
+    height: auto;
+    width: 100%;
+}
+img.logo{
+    height: 75px;
+    width: 75px;
+    margin: 0px;
+    margin-bottom: 0.5%
+}
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+}
+#content {
+    position: relative;
+}
+main{
+    background-image: url("/images/notebook-background.png");
+    background-size: 100%;
+}
+footer{
+    background-color: #D9D9D9;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.organization img{
+    height:150px;
+    width: auto;
+}
+#wrapper{
+    display: flex;
+    height: 400px;
+    width: auto;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper div{
+    height: 300px;
+    width: 400px;
+    margin: 0px;
+    align-items: center;
+    align-content: center;
+}
+#wrapper p{
+    font-size: 100%;
+}
+#wrapper li{
+    display: inline;
+}
+.social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+.social-media li {
+    display: inline;
+    margin: 0 10px;
+  }
+img#social-media{
+    display: inline;
+    height:25px;
+    width:auto;
+}
