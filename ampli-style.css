@@ -10,6 +10,9 @@ header{
     align-items: center;
     margin: auto;
   }
+  #header-for-requirements {
+    font-size: 36px;
+  }
 a{
    transition: text-decoration-color 300ms;
 }
@@ -103,9 +106,7 @@ main{
   text-align: center;
   font-size: 24px;
 }
-#header-for-requirements {
-  font-size: 36px;
-}
+
 ul {
   list-style-type: disc;
   padding-left: 20px; 
