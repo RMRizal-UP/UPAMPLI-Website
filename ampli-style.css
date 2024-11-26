@@ -110,14 +110,14 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  width: 1200px;
   height: 650px;
   overflow: auto;
   margin: 0 auto;
   box-sizing: border-box;
 }
 .fb-page {
-  max-width: 1200px
+  width: 1200px
 }
 
 ul {
