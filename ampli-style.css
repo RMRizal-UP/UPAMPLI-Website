@@ -110,8 +110,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%; 
   max-width: 1200px;
   height: 650px;
   overflow: auto;
@@ -119,9 +117,7 @@ main{
   box-sizing: border-box;
 }
 .fb-page {
-  max-width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 8px;  
+  max-width: 1200px
 }
 
 ul {
