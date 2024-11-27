@@ -34,9 +34,8 @@ function createofficersGroup(id, titleText, officers) {
 
       const img = document.createElement("img");
       img.src = officer.imgSrc;
-      img.style.width = "165px";
-      img.style.height = "165px";
-      img.style.borderRadius = "100px";
+      img.style.width = "auto";
+      img.style.height = "250px";
       officerDiv.appendChild(img);
 
       const officerName = document.createElement("h2");
@@ -62,7 +61,7 @@ const officersData = [
     title: "The Adviser",
     officers: [
       [
-        { id: "sumaylo", name: "Sir Denis Sumaylo", title: "Adviser (AY 2024-2025)", imgSrc: "https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/445365678_2162898350742316_5057968157835525944_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEPx92fD4hFHf3vEJSHlQUtTgB3Rl1pUC9OAHdGXWlQL_b-dkPj-fdVCE5ls2M-KcBTPArZdvLJ2b502DmfjHmw&_nc_ohc=PfmRCaRI-S8Q7kNvgGNidNI&_nc_zt=23&_nc_ht=scontent.fcgy2-1.fna&_nc_gid=ARTsr4vCrEBEfrV9NNwsrOs&oh=00_AYDxUyv0GLk4CET9Dd80DKRaV77XxMxC4d_uEowK_C4ogw&oe=6732A0A3" },
+        { id: "sumaylo", name: "Sir Denis Sumaylo", title: "Adviser (AY 2024-2025)", imgSrc: "images/Photos of Officers/Denis Sumaylo.jpg" },
       ],
     ]
   },
@@ -71,20 +70,20 @@ const officersData = [
     title: "Resident Officers",
     officers: [
       [
-        { id: "posadas", name: "Ella Claris Posadas", title: "Executive Director",imgSrc: "" },
-        { id: "alombro", name: "Rainess Katrina Alombro", title: "Director of Administrative Affairs", imgSrc: "" },
-        { id: "sazon", name: "Franz  Jerick Sazon", title: "Director of Musical Affairs", imgSrc: "" },
-        { id: "emata", name: "Simone Anne Emata", title: "Secretariat Head", imgSrc: "" },
+        { id: "posadas", name: "Ella Claris Posadas", title: "Executive Director",imgSrc: "images/Photos of Officers/Ella Posadas.png" },
+        { id: "alombro", name: "Rainess Katrina Alombro", title: "Director of Administrative Affairs", imgSrc: "images/Photos of Officers/Rainess Alombro.png" },
+        { id: "sazon", name: "Franz  Jerick Sazon", title: "Director of Musical Affairs", imgSrc: "images/Photos of Officers/Franz Sazon.png" },
+        { id: "emata", name: "Simone Anne Emata", title: "Secretariat Head", imgSrc: "images/Photos of Officers/Simone Emata.png" },
       ],
       [
-        { id: "igares", name: "Elisha Grace Igares", title: "Deputy Secretairat Head",imgSrc: "" },
-        { id: "jornales", name: "Jiane Jornales", title: "Creatives Head", imgSrc: "" },
-        { id: "nunez", name: "Nerisse Faith Nuñez", title: "Deputy Creatives Head", imgSrc: "" },
-        { id: "paglinawan", name: "George Karlo Paglinawan", title: "Finance and Logistics Head", imgSrc: "" },
+        { id: "igares", name: "Elisha Grace Igares", title: "Deputy Secretairat Head",imgSrc: "images/Photos of Officers/Elisha Igares.png" },
+        { id: "jornales", name: "Jiane Jornales", title: "Creatives Head", imgSrc: "images/Photos of Officers/Jiane Jornales.png" },
+        { id: "nunez", name: "Nerisse Faith Nuñez", title: "Deputy Creatives Head", imgSrc: "images/Photos of Officers/Nerisse Nunez.png" },
+        { id: "paglinawan", name: "George Karlo Paglinawan", title: "Finance and Logistics Head", imgSrc: "images/Photos of Officers/George Paglinawan.png" },
       ],
       [
-        { id: "lalican", name: "Marithe Franchesca Lalican", title: "Human Resources Head",imgSrc: "" },
-        { id: "delola", name: "Alexander Luis Delola", title: "Technical Head", imgSrc: "" },
+        { id: "lalican", name: "Marithe Franchesca Lalican", title: "Human Resources Head",imgSrc: "images/Photos of Officers/Marithe Lalican.png" },
+        { id: "delola", name: "Alexander Luis Delola", title: "Technical Head", imgSrc: "images/Photos of Officers/Alexander Delola.png" },
       ],
     ]
   },
