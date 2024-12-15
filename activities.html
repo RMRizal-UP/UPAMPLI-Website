@@ -17,10 +17,85 @@
             img {
                 vertical-align: middle;
             }
-            body { font-family: Arial, sans-serif; }
-            .carousel-container { width: 80%; margin: 20px auto; }
-            .swiper-slide { text-align: center; padding: 20px; }
-            .swiper-slide img { max-width: 100%; height: auto; }
+            body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #1f1f1f, #3b3b3b);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .swiper {
+      background: linear-gradient(120deg, #3b3b3b, #1f1f1f);
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .swiper-slide h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #ffdf00;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .swiper-slide p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .swiper-slide a img {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid #ffdf00;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .swiper-slide a img:hover {
+      transform: scale(1.1);
+    }
+
+    .swiper-pagination-bullet {
+      background: #ffdf00;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ffdf00;
+      color: #1f1f1f;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #ffcc00;
+      transform: translateY(-3px);
+    }
 
     </style>
 </head>
@@ -173,17 +248,18 @@
         slide.classList.add("swiper-slide");
         slide.innerHTML = `
           <h3>${post.title}</h3>
-          <p>${post.content}</p>
+          <p>${post.content.replace(/\n/g, '<br>')}</p>
           <a href="${post.link}" target="_blank">
             <img src="${post.image}" alt="${post.title}">
           </a>
+          <a href="${post.link}" class="button" target="_blank">Read More</a>
         `;
         carouselContent.appendChild(slide);
       });
   
       new Swiper(".swiper", {
         pagination: { el: ".swiper-pagination" },
-        autoplay: { delay: 3000 },
+        autoplay: { delay: 5000 },
         loop: true,
       });
     </script>
