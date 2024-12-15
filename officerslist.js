@@ -63,7 +63,8 @@ const officersData = [
   {
     id: "adviser",
     title: "The Adviser",
-    officers: [
+    officers: 
+    [
       [
         { id: "sumaylo", name: "Sir Denis Sumaylo", title: "Adviser (AY 2024-2025)", imgSrc: "images/Photos of Officers/Denis Sumaylo.jpg" },
       ],
@@ -72,7 +73,8 @@ const officersData = [
   {
     id: "resident-officers",
     title: "Resident Officers",
-    officers: [
+    officers: 
+    [
       [
         { id: "posadas", name: "Ella Claris Posadas", title: "Executive Director",imgSrc: "images/Photos of Officers/Ella Posadas.png" },
         { id: "alombro", name: "Rainess Katrina Alombro", title: "Director of Administrative Affairs", imgSrc: "images/Photos of Officers/Rainess Alombro.png" },
