@@ -1,3 +1,6 @@
+*{
+  font-size: 36px;
+}
 h1{
   text-align: center;
   font-size: 400%;
@@ -10,12 +13,50 @@ header{
   align-items: center;
   margin: auto;
 }
-#header-for-requirements {
-  font-size: 36px;
-}
+
 a{
  transition: text-decoration-color 300ms;
 }
+
+@media only screen and (min-width: 0px) {
+main p {font-size: 50%;}
+h1 {font-size: 80%;}
+h2 {font-size: 40%;}
+nav a{font-size:21%;}
+ul li{font-size: 50%;}
+#wrapper p, #wrapper a{font-size: 10px;}
+img.logo{height:40px;width: auto;}
+img.social-media{height: 20px;}
+li b, li u, span{font-size: 100%}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  nav a{font-size:25px;}
+  main p {font-size: 75%;}
+  ul li{font-size: 75%;}
+  h1 {font-size: 150%;}
+  h2 {font-size: 60%;}
+  #wrapper p, #wrapper a {font-size: 50%;}
+  img.logo{height:50px; width: auto;}
+  #header-for-requirements {font-size: 100%;}
+  #workshops h2 {font-size: 50%;}
+  li b, li u, span{font-size: 100%}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  nav a{font-size:40px;}
+  main p {font-size: 100%;}
+  ul li{font-size: 100%;}
+  h1 {font-size: 150%;}
+  h2 {font-size: 75%;}
+  #wrapper p, #wrapper a {font-size: 15px;}
+  img.logo{height:75px; width: auto;}
+  #header-for-requirements {font-size: 125%;}
+  #workshops h2 {font-size: 75%;}
+  li b, li u, span{font-size: 100%}
+}
+
 a::after {
 content: '';
 position: absolute;
@@ -67,10 +108,9 @@ body{
   background-size:cover;
   font-family:Petaluma Script;
   color:black;
-  margin:0px;
+  margin: 0;
 } 
 p{
-  font-size: 48px;
   line-height: 140%;
   text-align: justify;
   width: 75%;
@@ -90,8 +130,6 @@ img#cover{
   width: 100%;
 }
 img.logo{
-  height: 75px;
-  width: 75px;
   margin: 0px;
   margin-bottom: 0.5%
 }
@@ -103,6 +141,7 @@ img.logo{
   position: relative;
 }
 main{
+  padding: 20px;
   background-image: url("images/notebook-background.png");
   background-size: 100%;
 }
@@ -121,7 +160,6 @@ text-align: left;
 }
 
 ul li {
-font-size: 50px;
 margin: 5px 0; 
 padding-left: 10px;
 
@@ -133,15 +171,12 @@ footer{
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-.organization img{
-  height:150px;
-  width: auto;
+  width:100%;
 }
 #wrapper{
   display: flex;
-  height: 400px;
-  width: auto;
+  height: 100%;
+  width: 100%;
   margin: 0px;
   align-items: center;
   justify-content: center;
@@ -153,9 +188,6 @@ footer{
   align-items: center;
   align-content: center;
 }
-#wrapper p{
-  font-size: 100%;
-}
 #wrapper li{
   display: inline;
 }
@@ -166,11 +198,11 @@ footer{
 
 .social-media li {
   display: inline;
+  padding-inline: 0px;
   margin: 0 10px;
 }
-img#social-media{
+img.social-media{
   display: inline;
-  height:25px;
   width:auto;
 } 
 .container {
@@ -212,6 +244,15 @@ img#social-media{
   border-radius: 3px 0 0 3px;
 }
 
+.mission{
+  list-style-type: disc;
+  padding-left: 20px; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 75%;
+  text-align: justify;
+}
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 103, 199, 0.8);
@@ -240,4 +281,63 @@ img.slideshow{
 img.slideshow{
   width: 50%;
   height: 50%;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.officers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; /* Default size */
+  height: 400px; /* Default size */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.indie img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.indie h2 {
+  font-size: 0.75em;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.indie h3 {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .indie {
+    width: 200px; /* Smaller size for smaller screens */
+  }
+
+@media (max-width: 480px) {
+  .indie {
+    width: 100%; /* Full width for very small screens */
+  }
+}
 }
