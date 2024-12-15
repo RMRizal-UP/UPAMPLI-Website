@@ -38,18 +38,6 @@
         max-width: 100%;
     }
 
-    nav a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #333;
-        font-weight: 600;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: #007BFF;
-    }
-
     #cover {
         width: 100%;
         display: block;
@@ -62,32 +50,91 @@
 
     h1 {
         font-family: 'Courgette', cursive;
-        font-size: 1.8rem;
+        font-size: .8rem;
         margin: 20px 0;
     }
 
     .carousel-container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto 40px;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-    }
+  width: 90%; /* Wider carousel */
+  max-width: 800px; /* Maximum width */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
 
-    .swiper-slide img {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-    }
+/* Swiper Settings */
+.swiper {
+  padding: 20px 0; /* Adjust top and bottom padding for cleaner look */
+}
 
-    .text-box {
-        padding: 15px;
-        background: #f7f7f7;
-        border-radius: 8px;
-        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-    }
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.swiper-slide img {
+  width: 100%; /* Ensure it scales properly */
+  height: auto; /* Keep aspect ratio */
+  max-height: 400px; /* Limit the height */
+  object-fit: cover; /* Crop if needed */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Text Box Styling */
+.text-box {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h3 {
+  font-family: 'Courgette', cursive; /* Stylish music font */
+  font-size: 0.7rem; /* Smaller title font size */
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-family: 'Poppins', sans-serif; /* Clean font for readability */
+  font-size: 0.65rem; /* Smaller body text size */
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Pagination Style */
+.swiper-pagination-bullet {
+  background: #666; /* Neutral gray bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background: #333; /* Darker gray for active bullet */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 95%; /* More compact for smaller screens */
+  }
+
+  .text-box h3 {
+    font-size: 0.85rem; /* Even smaller title on small screens */
+  }
+
+  .text-box p {
+    font-size: 0.7rem; /* Smaller text for better fit */
+  }
+}
 
     .mySlides1, .mySlides2 {
         display: none;
@@ -95,22 +142,6 @@
 
     img {
         vertical-align: middle;
-    }
-
-    footer {
-        background: #333;
-        color: #fff;
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-    footer a {
-        color: #007BFF;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
     }
 
     </style>
