@@ -77,17 +77,12 @@ const officersData = [
         { id: "posadas", name: "Ella Claris Posadas", title: "Executive Director",imgSrc: "images/Photos of Officers/Ella Posadas.png" },
         { id: "alombro", name: "Rainess Katrina Alombro", title: "Director of Administrative Affairs", imgSrc: "images/Photos of Officers/Rainess Alombro.png" },
         { id: "sazon", name: "Franz  Jerick Sazon", title: "Director of Musical Affairs", imgSrc: "images/Photos of Officers/Franz Sazon.png" },
-      ],
-      [
         { id: "emata", name: "Simone Anne Emata", title: "Secretariat Head", imgSrc: "images/Photos of Officers/Simone Emata.png" },
         { id: "igares", name: "Elisha Grace Igares", title: "Deputy Secretairat Head",imgSrc: "images/Photos of Officers/Elisha Igares.png" },
       ],
       [
         { id: "jornales", name: "Jiane Jornales", title: "Creatives Head", imgSrc: "images/Photos of Officers/Jiane Jornales.png" },
         { id: "nunez", name: "Nerisse Faith Nuñez", title: "Deputy Creatives Head", imgSrc: "images/Photos of Officers/Nerisse Nunez.png" },
-
-      ],
-      [
         { id: "paglinawan", name: "George Karlo Paglinawan", title: "Finance and Logistics Head", imgSrc: "images/Photos of Officers/George Paglinawan.png" },
         { id: "lalican", name: "Marithe Franchesca Lalican", title: "Human Resources Head",imgSrc: "images/Photos of Officers/Marithe Lalican.png" },
         { id: "delola", name: "Alexander Luis Delola", title: "Technical Head", imgSrc: "images/Photos of Officers/Alexander Delola.png" },
