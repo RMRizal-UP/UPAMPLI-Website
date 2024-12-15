@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="ampli-style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
     <title>UP AMPLI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" />
     <style>
             * {
                 box-sizing: border-box
@@ -16,6 +17,10 @@
             img {
                 vertical-align: middle;
             }
+            body { font-family: Arial, sans-serif; }
+            .carousel-container { width: 80%; margin: 20px auto; }
+            .swiper-slide { text-align: center; padding: 20px; }
+            .swiper-slide img { max-width: 100%; height: auto; }
 
     </style>
 </head>
@@ -33,6 +38,13 @@
         <img id="cover" src="images/ampli-cover.png" style="width: 100%; display: block;">
     </div>
     <main>
+      <div class="carousel-container">
+        <div class="swiper">
+          <div class="swiper-wrapper" id="carousel-content"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
         <h1>Application Orientation 24-25</h1>
         <div id="content" class="activities">
             <div class="container">
@@ -149,6 +161,31 @@
         }
         x[slideIndex[no]-1].style.display = "block";  
     }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+    <script src="posts.js"></script>
+    <script>
+      const posts = JSON.parse(localStorage.getItem("facebookPosts") || '[]');
+      const carouselContent = document.getElementById("carousel-content");
+  
+      posts.forEach(post => {
+        const slide = document.createElement("div");
+        slide.classList.add("swiper-slide");
+        slide.innerHTML = `
+          <h3>${post.title}</h3>
+          <p>${post.content}</p>
+          <a href="${post.link}" target="_blank">
+            <img src="${post.image}" alt="${post.title}">
+          </a>
+        `;
+        carouselContent.appendChild(slide);
+      });
+  
+      new Swiper(".swiper", {
+        pagination: { el: ".swiper-pagination" },
+        autoplay: { delay: 3000 },
+        loop: true,
+      });
     </script>
 </body>
 </html>
