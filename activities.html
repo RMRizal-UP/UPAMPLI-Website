@@ -31,26 +31,44 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for elevation */
   margin: 20px auto; /* Centering with auto margins */
   border: 2px solid #ececec; /* Light border for a clean, subtle frame */
+  position: relative; /* Ensure proper positioning for inner elements */
 }
 
 .swiper {
+  height: 100%; /* Occupy the full height of the container */
+  display: flex; /* Ensure slides are aligned correctly */
+  flex-direction: column;
+  justify-content: center;
   padding: 0; /* Remove unnecessary padding */
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .swiper-slide img {
   width: 100%; /* Image fits the container width */
-  height: auto; /* Maintain aspect ratio */
+  max-height: 60%; /* Limit the height to leave space for the text */
   object-fit: cover; /* Crop the image to fit neatly */
+  margin-bottom: 10px; /* Add space between image and text */
 }
 
 .text-box {
   width: 90%; /* Slight padding within the carousel */
-  max-width: none; /* Expand to fit wide dimensions */
   background: #f9f9f9; /* Soft grayish-white for a "sheet" effect */
   border-radius: 4px; /* Subtle rounded corners */
   padding: 10px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Minimal shadow */
-  margin-top: 10px; /* Slight gap between image and text */
+  overflow: hidden; /* Prevent overflow of long text */
+  max-height: 35%; /* Keep the text section within a fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text inside */
+  text-align: center; /* Center the text horizontally */
 }
 
 .text-box h3 {
@@ -58,6 +76,7 @@
   font-size: 1rem; /* Increase readability */
   line-height: 1.5;
   color: #444;
+  margin-bottom: 5px; /* Space below the title */
 }
 
 .text-box p {
@@ -65,6 +84,7 @@
   font-size: 0.8rem; /* Slightly larger for readability */
   line-height: 1.6;
   color: #666;
+  margin: 0;
 }
 
 .swiper-pagination-bullet {
@@ -74,7 +94,6 @@
 .swiper-pagination-bullet-active {
   background: #444; /* Darker for active */
 }
-
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
