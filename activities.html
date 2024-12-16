@@ -22,71 +22,59 @@
     }
 
     .carousel-container {
-  width: 90%; /* Wider carousel */
-  max-width: 800px; /* Maximum width */
-  background: #fff;
-  border-radius: 10px;
+  width: 100%; /* Full width for the embed look */
+  max-width: 1200px; /* Wider than before */
+  aspect-ratio: 16/9; /* To mimic a theater mode aspect ratio */
+  background: #ffffff; /* White background like a music sheet */
+  border-radius: 8px; /* Slightly rounded corners */
   overflow: hidden;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for elevation */
+  margin: 20px auto; /* Centering with auto margins */
+  border: 2px solid #ececec; /* Light border for a clean, subtle frame */
 }
 
-/* Swiper Settings */
 .swiper {
-  padding: 20px 0; /* Adjust top and bottom padding for cleaner look */
-}
-
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+  padding: 0; /* Remove unnecessary padding */
 }
 
 .swiper-slide img {
-  width: 100%; /* Ensure it scales properly */
-  height: auto; /* Keep aspect ratio */
-  max-height: 400px; /* Limit the height */
-  object-fit: cover; /* Crop if needed */
-  border-radius: 8px;
-  margin-bottom: 20px;
+  width: 100%; /* Image fits the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop the image to fit neatly */
 }
 
-/* Text Box Styling */
 .text-box {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
-  padding: 15px;
-  background: #f7f7f7;
-  border-radius: 8px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Slight padding within the carousel */
+  max-width: none; /* Expand to fit wide dimensions */
+  background: #f9f9f9; /* Soft grayish-white for a "sheet" effect */
+  border-radius: 4px; /* Subtle rounded corners */
+  padding: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Minimal shadow */
+  margin-top: 10px; /* Slight gap between image and text */
 }
 
 .text-box h3 {
-  font-family: 'Courgette', cursive; /* Stylish music font */
-  font-size: 0.7rem; /* Smaller title font size */
-  line-height: 1.4;
-  color: #333;
-  margin-bottom: 10px;
+  font-family: 'Courgette', cursive;
+  font-size: 1rem; /* Increase readability */
+  line-height: 1.5;
+  color: #444;
 }
 
 .text-box p {
-  font-family: 'Poppins', sans-serif; /* Clean font for readability */
-  font-size: 0.65rem; /* Smaller body text size */
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem; /* Slightly larger for readability */
   line-height: 1.6;
-  color: #555;
+  color: #666;
 }
 
-/* Pagination Style */
 .swiper-pagination-bullet {
-  background: #666; /* Neutral gray bullets */
+  background: #bbb; /* Softer pagination dots */
 }
 
 .swiper-pagination-bullet-active {
-  background: #333; /* Darker gray for active bullet */
+  background: #444; /* Darker for active */
 }
+
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
