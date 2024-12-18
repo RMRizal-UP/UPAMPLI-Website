@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'petaluma-scriptregular';
+  src: url('font/petalumascript-webfont.woff2') format('woff2'),
+       url('font/petalumascript-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 *{
   font-size: 36px;
 }
@@ -106,7 +114,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
-  font-family:Petaluma Script;
+  font-family:petaluma-scriptregular;
   color:black;
   margin: 0;
 } 
